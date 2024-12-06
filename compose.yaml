@@ -1,0 +1,12 @@
+services:
+  mysql:
+    container_name: Desafio2
+    image: mysql:${MYSQL_TAG}
+    ports:
+      - "3306:3306"
+    environment:
+      MYSQL_DB: ${MYSQL_DB}
+      MYSQL_USER: ${MYSQL_USER}
+      MYSQL_PASSWORD: ${MYSQL_PASSWORD}
+      MYSQL_ROOT_PASSWORD: ${MYSQL_PASSWORD}
+
